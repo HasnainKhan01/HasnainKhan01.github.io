@@ -4707,3 +4707,30 @@ input, select, textarea {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	/* Foundation Tracker: two screenshots side by side, stacked on phones. */
+	.shot-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+		align-items: start;
+		margin: 4rem 0;
+	}
+
+		.shot-row .image {
+			display: block;
+			border: 1px solid rgba(0, 0, 0, 0.12);
+		}
+
+		.shot-row img {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.shot-row {
+				grid-template-columns: 1fr;
+				margin: 2rem 0;
+			}
+
+		}
