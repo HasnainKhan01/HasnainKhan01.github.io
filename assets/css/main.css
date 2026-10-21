@@ -4687,3 +4687,23 @@ input, select, textarea {
 		}
 
 	}
+
+/* ---- Custom overrides (portfolio) ---- */
+
+	/* Never let long project titles run off the edge of small screens. */
+	#main > .post header.major h2 {
+		overflow-wrap: break-word;
+	}
+
+	/* Keep every project image inside its column. */
+	#main > .post img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* The Task Manager screenshot is a tall phone capture: show it phone-sized, centered. */
+	.image.main.phone-shot {
+		max-width: 20rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
